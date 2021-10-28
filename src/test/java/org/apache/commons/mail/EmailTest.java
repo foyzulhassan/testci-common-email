@@ -6,7 +6,7 @@ import javax.mail.*;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-import org.apache.commons.*;
+//import org.apache.commons.*;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 
