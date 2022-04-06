@@ -332,7 +332,7 @@ public abstract class Email
      */
     public void setDebug(boolean d)
     {
-        this.debug = d;
+        this.debug = d
     }
 
     /**
