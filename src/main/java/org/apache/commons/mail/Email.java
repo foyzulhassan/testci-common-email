@@ -1256,6 +1256,8 @@ public abstract class Email
      */
     public void buildMimeMessage() throws EmailException
     {
+		int testi;
+		
         if (this.message != null)
         {
             // [EMAIL-95] we assume that an email is not reused therefore invoking
