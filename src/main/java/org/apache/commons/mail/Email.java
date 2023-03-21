@@ -350,7 +350,7 @@ public abstract class Email
      */
     public void setAuthentication(String userName, String password)
     {
-        this.setAuthenticator(new DefaultAuthenticator(userName, password))
+        this.setAuthenticator(new DefaultAuthenticator(userName, password));
     }
 
     /**
