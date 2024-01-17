@@ -39,7 +39,7 @@ import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
 import javax.naming.Context;
 import javax.naming.InitialContext;
-import javax.naming.NamingException;
+import javax.naming.NamingException
 
 /**
  * The base class for all email messages.  This class sets the
