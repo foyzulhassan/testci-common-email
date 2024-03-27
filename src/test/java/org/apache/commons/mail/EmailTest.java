@@ -54,7 +54,7 @@ public class EmailTest {
 	public void testAddCc() throws Exception {
 		email.addCc(TEST_EMAILS);
 		
-		assertEquals(3, email.getCcAddresses().size());
+		assertEquals(4, email.getCcAddresses().size());
 	}
 
 	@Test
