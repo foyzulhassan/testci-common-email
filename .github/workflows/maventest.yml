@@ -21,6 +21,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Install strace
+      run: sudo apt-get update && sudo apt-get install -y strace
     - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
@@ -28,6 +30,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean test
-
-
+      run: strace -o strace.log -f -tt -T mvn clean test
+    - name: Upload strace log
+      uses: actions/upload-artifact@v4
+      with:
+       name: strace-log
+       path: strace.log
