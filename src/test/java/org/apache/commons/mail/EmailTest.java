@@ -45,6 +45,7 @@ public class EmailTest {
 	
 	@Test
 	public void testAddBcc() throws Exception {
+		int i;
 		email.addBcc(TEST_EMAILS);
 		
 		assertEquals(4, email.getBccAddresses().size());
