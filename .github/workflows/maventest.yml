@@ -30,9 +30,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: strace -o strace.log -f -tt -T mvn clean test
-    - name: Upload strace log
-      uses: actions/upload-artifact@v4
-      with:
-       name: strace-log
-       path: strace.log
+      run: mvn clean test
